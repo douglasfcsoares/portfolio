@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfólio Front-end
 
-## Getting Started
+Bem-vindo ao meu repositório de portfólio! Este projeto foi desenvolvido para mostrar minhas habilidades como desenvolvedor frontend, utilizando as mais recentes tecnologias e ferramentas do ecossistema JavaScript.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **React:** Biblioteca JavaScript para construir interfaces de usuário.
+- **Next.js:** Framework React para aplicações web com renderização do lado do servidor e geração de sites estáticos.
+- **Tailwind CSS:** Framework CSS utilitário para estilização rápida e responsiva.
+- **Shadcn:** Biblioteca de componentes que facilita a criação de interfaces modernas e acessíveis.
+- **Framer Motion:** Biblioteca para animações em React, permitindo transições fluidas e interações dinâmicas.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Design Responsivo: O portfólio é totalmente responsivo, garantindo uma ótima experiência em dispositivos móveis e desktops.
+- **Animações Interativas:** Utilizando Framer Motion, o portfólio apresenta animações suaves que melhoram a experiência do usuário.
+- **Componentes Reutilizáveis:** Com Shadcn e Tailwind CSS, criei componentes estilizados e reutilizáveis que podem ser facilmente adaptados para diferentes seções do portfólio.
+- **Navegação Intuitiva:** A estrutura de navegação foi projetada para ser simples e intuitiva, facilitando a exploração do conteúdo.
