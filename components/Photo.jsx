@@ -19,7 +19,7 @@ const Photo = () => {
           animate={{opacity: 1,
             transition: {delay: 2, duration: 0.4, ease: 'easeInOut'}
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-normal absolute">
+          className="left-0.5 w-[296px] h-[294px] xl:w-[498px] xl:h-[498px] mix-blend-normal absolute z-0">
           <Image
           src='/assets/photo.png'
           priority
@@ -27,21 +27,20 @@ const Photo = () => {
           fill
           alt=""
           className="object-contain"
-          
           />
         </motion.div>
         {/* Circle */}
-        <motion.svg className='w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]'
+        <motion.svg className='w-[300px] xl:w-[506px] h-[298px] xl:h-[506px] relative z-10'
           fill='transparent'
-          viewBox='0 0 506 506'
+          viewBox='0 0 508 508'
           xmlns='http://www.w3.org/2000/svg'
         >
           <motion.circle
-            cx='253'
-            cy='253'
+            cx='254'
+            cy='254'
             r='250'
             stroke='#00ff99'
-            strokeWidth='4'
+            strokeWidth='8'
             strokeLinecap='round'
             strokeLinejoin='round'
             initial={{ strokeDasharray: '24 10 0 0'}}
