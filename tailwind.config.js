@@ -32,10 +32,10 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)"
       },
       colors: {
-        primary: "#1c1c22",
+        primary: "#020a3e",
         accent: {
-          DEFAULT: "#00ff99",
-          hover: "#00e187"
+          DEFAULT: "#FF5900",
+          hover: "#FF5900"
         }
       }
     }

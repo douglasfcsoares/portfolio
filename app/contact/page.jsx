@@ -20,7 +20,7 @@ import { motion } from "framer-motion";
 const info = [
   {
     icon: <FaPhoneAlt />,
-    title: "Phone",
+    title: "Telefone",
     description: "(+55) 48 9 9139-5727"
   },
   {
@@ -30,7 +30,7 @@ const info = [
   },
   {
     icon: <FaMapMarkedAlt />,
-    title: "Address",
+    title: "Endereço",
     description: "Florianópols SC"
   }
 ];
@@ -50,42 +50,41 @@ const Contact = () => {
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Let´s work together</h3>
+              <h3 className="text-4xl text-accent">Vamos trabalhar juntos</h3>
               <p className="text-white/30">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
                 eos natus explicabo inventore? Iure architecto aliquid harum
-                reprehenderit id ea reiciendis placeat quia, tenetur fugiat
-                molestiae recusandae dignissimos, consequatur ipsam.
+                reprehenderit id ea reiciendis.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="E-mail address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input type="firstname" placeholder="Nome" />
+                <Input type="lastname" placeholder="Sobrenome" />
+                <Input type="email" placeholder="E-mail" />
+                <Input type="phone" placeholder="Telefone" />
               </div>
               {/* select */}
               <Select>
                 <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
+                  <SelectValue placeholder="Selecione um serviço" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Select a service</SelectLabel>
+                    <SelectLabel>Selecione um serviço</SelectLabel>
                     <SelectItem value="est">Web Development</SelectItem>
                     <SelectItem value="cst">UI/UX Design</SelectItem>
                     <SelectItem value="mst">SEO</SelectItem>
-                    <SelectItem value="tst">Traffic management</SelectItem>
+                    <SelectItem value="tst">Gestão de Tráfego</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
               <Textarea
-                className="h-[200px] bg-primary text-white"
-                placeholder="Type your message here."
+                className="h-[150px] bg-primary text-white"
+                placeholder="Digite sua mensagem aqui."
               />
               {/* button */}
-              <Button size="md" className="max-w-40">
-                Send message
+              <Button size="md" className="max-w-[250px]">
+                Enviar mensagem
               </Button>
             </form>
           </div>

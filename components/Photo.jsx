@@ -1,49 +1,52 @@
-'use client'
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-
-
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Photo = () => {
   return (
     <div className="w-full h-full relative">
-      <motion.div 
-        initial={{opacity: 0 }}
-        animate={{opacity: 1,
-        transition: {delay: 2, duration: 0.4, ease: 'easeIn'}
-        }}>
-          {/* Image */}
-        <motion.div 
-          initial={{opacity: 0 }}
-          animate={{opacity: 1,
-            transition: {delay: 2, duration: 0.4, ease: 'easeInOut'}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 2, duration: 0.4, ease: "easeIn" }
+        }}
+      >
+        {/* Image */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 2, duration: 0.4, ease: "easeInOut" }
           }}
-          className="left-0.5 w-[296px] h-[294px] xl:w-[498px] xl:h-[498px] mix-blend-normal absolute z-0">
+          className="left-0.5 w-[296px] h-[294px] xl:w-[498px] xl:h-[498px] mix-blend-normal absolute z-0"
+        >
           <Image
-          src='/assets/photo.png'
-          priority
-          quality={100}
-          fill
-          alt=""
-          className="object-contain"
+            src="/assets/photo.png"
+            priority
+            quality={100}
+            fill
+            alt=""
+            className="object-contain"
           />
         </motion.div>
         {/* Circle */}
-        <motion.svg className='w-[300px] xl:w-[506px] h-[298px] xl:h-[506px] relative z-10'
-          fill='transparent'
-          viewBox='0 0 508 508'
-          xmlns='http://www.w3.org/2000/svg'
+        <motion.svg
+          className="w-[300px] xl:w-[506px] h-[298px] xl:h-[506px] relative z-10"
+          fill="transparent"
+          viewBox="0 0 508 508"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <motion.circle
-            cx='254'
-            cy='254'
-            r='250'
-            stroke='#00ff99'
-            strokeWidth='8'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            initial={{ strokeDasharray: '24 10 0 0'}}
+            cx="254"
+            cy="254"
+            r="250"
+            stroke="#FF5900"
+            strokeWidth="8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            initial={{ strokeDasharray: "24 10 0 0" }}
             animate={{
               strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
               rotate: [120, 360]
@@ -51,13 +54,13 @@ const Photo = () => {
             transition={{
               duration: 20,
               repeat: Infinity,
-              repeatType: 'reverse'
+              repeatType: "reverse"
             }}
           />
         </motion.svg>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Photo
+export default Photo;
