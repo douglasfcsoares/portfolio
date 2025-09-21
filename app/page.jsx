@@ -25,20 +25,20 @@ const Home = () => {
             </p>
             {/* Btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
+              <Link
+                href="assets/curriculum/Developer_front_end_Douglas_Soares.pdf"
+                download="Developer_front_end_Douglas_Soares.pdf"
+                target="_blank"
               >
-                <Link
-                  href="assets/curriculum/Developer_front_end_Douglas_Soares.pdf"
-                  download="Developer_front_end_Douglas_Soares.pdf"
-                  target="_blank"
+                <Button
+                  variant="outline"
+                  size="xl"
+                  className="uppercase flex items-center gap-2"
                 >
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />
-                </Link>
-              </Button>
+                </Button>
+              </Link>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
